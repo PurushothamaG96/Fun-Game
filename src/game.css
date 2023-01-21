@@ -1,0 +1,121 @@
+.mainConatiner{
+    position: relative;
+    border: none;
+    width:1400px;
+    height:400px;
+    text-align: left;
+}
+.gunBullet-conatainer{
+    position: absolute;
+}
+.gunInGame{
+    width: 70px;
+    position: absolute;
+    top: 400px;
+    z-index: 1;
+    
+}
+.bullet2{
+    width: 50px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 400px;
+    z-index: 0;
+    left: 12px;
+    border: 1px solid white;
+    
+}
+.anim{
+    animation-name: b1;
+    animation-duration: 0.5s;
+}
+@keyframes b1{
+    0%   {  top:400px;}
+    100% {  top:-1000px;}
+}
+
+.down{
+    width:100px;
+    transform:rotateX(70deg);
+}
+.up{
+    width: 100px;
+    height: 70px;   
+}
+.btnContainer{
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    color: red;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background: linear-gradient(120deg, rgb(9, 255, 0) 40%, blue) ;
+}
+.arrContainer{
+    position: absolute;
+    top: 10px;
+}
+.btnContainer>div>button{
+    width:70px;
+    height: 30px;
+    margin: 5px;
+    color: red;
+}
+.btnContainer>h1{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 100px;
+
+}
+.plus1{
+    position: absolute;
+    right: 600px;
+    top:40px;
+    font-size: 70px;
+    animation-name: plus1;
+    animation-duration: 0.5s;
+    z-index: 11;
+    visibility: visible;
+    }
+.inActiveplus{
+    position: absolute;
+    right: 600px;
+    top:40px;
+    font-size: 10px;
+    z-index: -1;
+    visibility: hidden;
+}
+    @keyframes plus1{
+        0%{right: 600px; top:40px;}
+        100%{right:40px; top: 500px;}
+    }
+    .inActivethumb{
+        position: absolute;
+        right: 600px;
+        top:100pxpx;
+        width: 300px;
+        visibility: hidden;
+        
+    }
+    .thumb{
+        position: absolute;
+        right: 600px;
+        top:100pxpx;
+        width: 300px;
+        visibility: visible;
+        z-index: 11;
+        animation-name: tumb;
+        transform: rotate(360);
+        animation-duration:0.5s ;
+
+    }
+    @keyframes tumb{
+        0%{top: 200px; }
+        100%{top:100px}
+    }
